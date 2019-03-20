@@ -14,8 +14,8 @@ for line in fh:
     counts[hour] = counts.get(hour, 0) + 1
 
 lst = list()
-for k,v in sorted(counts.items()):
-    print(k,v)
+for hour,hour_count in sorted(counts.items()):
+    print(hour,hour_count)
 
 
 
